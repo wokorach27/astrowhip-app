@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign up | ASTROWHIP</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#fbf9ff;--card:#fff;--ink:#1b1340;--muted:#5d557f;--line:#e4def5;--night:#1b1340;--lilac:#b8a4f5;--gold:#f6c453;--accent:#4b2fc4;--err:#b3261e;--ph:#7d75a3;box-sizing:border-box}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f0a26;--card:#191237;--ink:#efeaff;--muted:#b3aad6;--line:#2e2559;--accent:#b8a4f5;--err:#ff8a80;--ph:#8f86b8}}
+:root[data-theme="dark"]{--bg:#0f0a26;--card:#191237;--ink:#efeaff;--muted:#b3aad6;--line:#2e2559;--accent:#b8a4f5;--err:#ff8a80;--ph:#8f86b8}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+body{margin:0;background:var(--night);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.5}
+a{color:inherit}
+.page{max-width:480px;margin:0 auto;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;background:var(--bg)}
+.hero{background:var(--night);color:#fff;position:relative;overflow:hidden;padding:calc(20px + env(safe-area-inset-top,0px)) 24px 56px}
+.rings{position:absolute;right:-92px;top:-112px;width:340px;height:340px;pointer-events:none}
+.hero>*:not(.rings){position:relative}
+.back{display:inline-block;color:var(--lilac);font-weight:500;text-decoration:none;padding:8px 0;margin-bottom:6px}
+.brand{display:flex;align-items:center;gap:12px;margin:6px 0 18px}
+.brand svg{width:56px;height:56px;flex:none}
+.logo{font-family:"Syne",system-ui,sans-serif;font-weight:800;font-size:1.6rem;line-height:1}
+.logo span{color:var(--lilac)}
+h1{font-family:"Syne",system-ui,sans-serif;font-weight:800;font-size:1.9rem;line-height:1.1;margin:0 0 12px}
+.hero p{margin:0;max-width:34ch;color:#d6cdf7;font-size:.95rem}
+.sheet{background:var(--bg);margin-top:-28px;border-radius:28px 28px 0 0;padding:28px 24px calc(32px + env(safe-area-inset-bottom,0px));position:relative;flex:1}
+form{display:flex;flex-direction:column;gap:16px}
+.field{display:flex;flex-direction:column;gap:6px}
+label{font-weight:500;font-size:.9rem}
+input{font:inherit;font-size:1rem;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;width:100%}
+input::placeholder{color:var(--ph)}
+input:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-color:var(--accent)}
+input[aria-invalid="true"]{border-color:var(--err)}
+.help{font-size:.8rem;color:var(--muted)}
+.err{font-size:.82rem;color:var(--err);min-height:0}
+.err:empty{display:none}
+.open{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:.82rem;font-weight:500;color:var(--muted)}
+.open i{width:10px;height:10px;border-radius:50%;background:var(--gold);flex:none}
+.cta{font:inherit;font-weight:700;font-size:1rem;background:var(--gold);color:var(--night);border:none;border-radius:999px;padding:15px 22px;cursor:pointer;width:100%;text-align:center;text-decoration:none;display:block}
+.cta:focus-visible,.back:focus-visible,.alt:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.alt{display:block;text-align:center;color:var(--accent);font-weight:500;text-decoration:none;padding:6px}
+.fine{font-size:.8rem;color:var(--muted);margin:0}
+.done{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding-top:12px}
+.tick{width:84px;height:84px;border-radius:50%;background:var(--gold);display:grid;place-items:center}
+.done h2{font-family:"Syne",system-ui,sans-serif;font-weight:800;font-size:1.5rem;margin:0}
+.done p{margin:0;color:var(--muted);max-width:32ch}
+.done .cta,.done .alt{width:100%}
+</style>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1b1340">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body>
+<div class="page">
+<header class="hero">
+<svg class="rings" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g opacity=".55"><circle cx="100" cy="100" r="40" stroke="#b8a4f5" stroke-width="1.2"/><circle cx="100" cy="100" r="70" stroke="#b8a4f5" stroke-opacity=".7" stroke-width="1.2"/><circle cx="100" cy="100" r="96" stroke="#b8a4f5" stroke-opacity=".5" stroke-width="1.2"/></g><circle cx="140" cy="100" r="6" fill="#f6c453"/><circle cx="30" cy="100" r="4" fill="#f7c9dc"/></svg>
+<a class="back" href="index.html">&lsaquo;&nbsp; Back to shop</a>
+<div class="brand">
+<svg viewBox="0 0 512 512" fill="none" role="img" aria-label="ASTRO Whip app icon"><rect x="3" y="3" width="506" height="506" rx="112" fill="#1b1340" stroke="#b8a4f5" stroke-opacity=".4" stroke-width="6"/><circle cx="256" cy="256" r="202" stroke="#b8a4f5" stroke-width="6"/><circle cx="256" cy="256" r="151.5" stroke="#8d78e0" stroke-width="5"/><circle cx="256" cy="256" r="101" stroke="#6a55c4" stroke-width="4"/><circle cx="394" cy="189" r="23" fill="#f6c453"/><path fill="#fff" fill-rule="evenodd" d="M167 343 L230 172 L281 172 L345 343 L302 343 L291 311 L220 311 L209 343 Z M255 210 L281 280 L230 280 Z"/></svg>
+<div class="logo">ASTRO<span>Whip</span></div>
+</div>
+<h1 id="title">Create your account</h1>
+<p id="lead">Join ASTRO Whip for beauty and style in Kampala. Order on WhatsApp in minutes.</p>
+</header>
+
+<main class="sheet">
+<form id="f" novalidate>
+<div class="field"><label for="name">Full name</label>
+<input id="name" name="name" type="text" autocomplete="name" placeholder="e.g. Namatovu Grace" aria-describedby="e-name">
+<div class="err" id="e-name" role="alert"></div></div>
+<div class="field"><label for="phone">WhatsApp number</label>
+<input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+256 7XX XXX XXX" aria-describedby="h-phone e-phone">
+<div class="help" id="h-phone">We confirm your orders on this number.</div>
+<div class="err" id="e-phone" role="alert"></div></div>
+<div class="field"><label for="email">Email (optional)</label>
+<input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" aria-describedby="e-email">
+<div class="err" id="e-email" role="alert"></div></div>
+<div class="open"><i aria-hidden="true"></i>Open Monday to Saturday, 8am to 10pm</div>
+<p class="fine">Your details are saved on this phone only and are used to personalise your order.</p>
+<button class="cta" type="submit">Create account</button>
+<a class="alt" href="index.html">Just browsing? Continue to the shop</a>
+</form>
+
+<section class="done" id="done" hidden aria-live="polite">
+<div class="tick" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+<h2 id="who">Welcome aboard</h2>
+<p>Your account is ready. Pick your items and send your order on WhatsApp.</p>
+<a class="cta" href="index.html">Start shopping</a>
+<a class="alt" href="#" id="edit">Edit my details</a>
+</section>
+</main>
+</div>
+
+<script>
+(function(){
+var KEY="astrowhip_profile";
+var f=document.getElementById("f"),done=document.getElementById("done"),who=document.getElementById("who");
+var title=document.getElementById("title"),lead=document.getElementById("lead");
+var fields={name:document.getElementById("name"),phone:document.getElementById("phone"),email:document.getElementById("email")};
+function load(){try{return JSON.parse(localStorage.getItem(KEY)||"null")}catch(e){return null}}
+function save(p){try{localStorage.setItem(KEY,JSON.stringify(p));return true}catch(e){return false}}
+function setErr(k,msg){document.getElementById("e-"+k).textContent=msg||"";fields[k].setAttribute("aria-invalid",msg?"true":"false")}
+function showDone(p){
+  var first=p.name.split(/\s+/)[0];
+  who.textContent="Welcome, "+first+"!";
+  title.textContent="You're all set";
+  lead.textContent="Thanks for joining ASTRO Whip.";
+  f.hidden=true;done.hidden=false;
+}
+function showForm(){
+  title.textContent="Create your account";
+  lead.textContent="Join ASTRO Whip for beauty and style in Kampala. Order on WhatsApp in minutes.";
+  done.hidden=true;f.hidden=false;fields.name.focus();
+}
+f.addEventListener("submit",function(e){
+  e.preventDefault();
+  var name=fields.name.value.trim().replace(/\s+/g," "),phone=fields.phone.value.trim(),email=fields.email.value.trim();
+  var digits=phone.replace(/[^0-9]/g,""),ok=true;
+  setErr("name",name.length<2?"Please enter your full name.":"");if(name.length<2)ok=false;
+  var badPhone=!/^\+?[0-9 ()-]+$/.test(phone)||digits.length<9||digits.length>15;
+  setErr("phone",badPhone?"Enter a valid WhatsApp number, e.g. +256 7XX XXX XXX.":"");if(badPhone)ok=false;
+  var badMail=email!==""&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email);
+  setErr("email",badMail?"Enter a valid email or leave this blank.":"");if(badMail)ok=false;
+  if(!ok){var first=f.querySelector('[aria-invalid="true"]');if(first)first.focus();return}
+  var p={name:name,phone:phone,email:email,joined:new Date().toISOString()};
+  save(p);showDone(p);
+});
+document.getElementById("edit").addEventListener("click",function(e){e.preventDefault();showForm()});
+var p=load();
+if(p&&p.name){fields.name.value=p.name;fields.phone.value=p.phone||"";fields.email.value=p.email||"";showDone(p)}
+})();
+</script>
+</body>
+</html>

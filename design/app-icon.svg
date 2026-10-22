@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="ASTRO Whip app icon">
+<rect width="512" height="512" fill="#1b1340"/>
+<circle cx="256" cy="256" r="202" fill="none" stroke="#b8a4f5" stroke-width="6"/>
+<circle cx="256" cy="256" r="151.5" fill="none" stroke="#8d78e0" stroke-width="5"/>
+<circle cx="256" cy="256" r="101" fill="none" stroke="#6a55c4" stroke-width="4"/>
+<circle cx="394" cy="189" r="23" fill="#f6c453"/>
+<path fill="#fff" fill-rule="evenodd" d="M167 343 L230 172 L281 172 L345 343 L302 343 L291 311 L220 311 L209 343 Z M255 210 L281 280 L230 280 Z"/>
+</svg>
