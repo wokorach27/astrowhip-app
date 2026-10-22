@@ -19,6 +19,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
 .logo{font-family:"Syne",system-ui,sans-serif;font-weight:800;font-size:1.3rem;text-decoration:none}
 .logo span{color:var(--accent)}
+.hr{display:flex;align-items:center;gap:8px}.signlink{color:var(--accent);font-weight:700;text-decoration:none;padding:8px 10px;border-radius:999px}.signlink:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .cartbtn{border:1px solid var(--ink);background:none;color:var(--ink);padding:8px 14px;border-radius:999px;font:inherit;font-weight:500;cursor:pointer}
 .cartbtn:focus-visible,.chip:focus-visible,.add:focus-visible,.send:focus-visible,.sw:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
 .hero{background:var(--night);color:#fff;position:relative;overflow:hidden}
@@ -74,7 +75,7 @@ footer b{color:#fff}
 <link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
 <body>
-<header><div class="wrap"><a class="logo" href="#top">ASTRO<span>Whip</span></a><button class="cartbtn" id="open">Order list (<span id="count">0</span>)</button></div></header>
+<header><div class="wrap"><a class="logo" href="#top">ASTRO<span>Whip</span></a><div class="hr"><a class="signlink" id="signlink" href="signup.html">Sign up</a><button class="cartbtn" id="open">Order list (<span id="count">0</span>)</button></div></div></header>
 
 <div class="hero" id="top">
 <svg class="rings" viewBox="0 0 200 200" fill="none" aria-hidden="true"><circle cx="100" cy="100" r="40" stroke="#b8a4f5"/><circle cx="100" cy="100" r="70" stroke="#b8a4f5" opacity=".7"/><circle cx="100" cy="100" r="96" stroke="#b8a4f5" opacity=".5"/><circle cx="140" cy="100" r="6" fill="#f6c453"/><circle cx="30" cy="100" r="4" fill="#f7c9dc"/></svg>
@@ -174,6 +175,7 @@ document.getElementById("open").onclick=function(){document.getElementById("cart
 document.getElementById("close").onclick=function(){document.getElementById("cart").classList.remove("open")};
 document.getElementById("cart").onclick=function(e){if(e.target.id==="cart")e.target.classList.remove("open")};
 chips();grid();draw();
+try{var u=JSON.parse(localStorage.getItem("astrowhip_profile")||"null");if(u&&u.name){document.getElementById("signlink").textContent="Hi, "+u.name.split(/\s+/)[0]}}catch(e){}
 </script>
 <script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js')})}</script>
 </body>

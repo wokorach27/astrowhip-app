@@ -18,3 +18,7 @@ OPTION B: real APK (Android Studio)
 
 OPTION C: APK from the hosted PWA without Android Studio
 After Option A, paste your hosted link into pwabuilder.com and download the Android package.
+
+SIGN-UP PAGE (new)
+signup.html sits next to index.html in both pwa/ and android-project/app/src/main/assets/. The shop header has a "Sign up" link that opens it, and after sign-up it shows "Hi, <first name>". Details are saved on the phone only (localStorage); there is no server or password.
+Brand used: night #1b1340, lilac #b8a4f5, gold #f6c453, accent #4b2fc4, Syne + DM Sans, and the orbit "A" icon. Figma design and tokens: see design/BRAND_AND_FIGMA.txt.

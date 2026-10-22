@@ -1,0 +1,14 @@
+ASTRO Whip brand tokens (taken from the app's index.html and icon)
+
+Colours
+  Night (hero, icon background, theme colour)  #1b1340
+  Lilac (rings, links on dark)                 #b8a4f5
+  Gold (primary button, planet dot)            #f6c453
+  Accent (links, focus on light)               #4b2fc4
+  Background  #fbf9ff   Card  #ffffff   Line  #e4def5   Muted text  #5d557f
+  Dark mode: bg #0f0a26  card #191237  ink #efeaff  line #2e2559
+Fonts: Syne ExtraBold (headings, logo), DM Sans (body)
+Icon: white "A" inside three lilac orbit rings with a gold planet (design/app-icon.svg)
+
+Figma prototype (Sign Up screen redesigned with these tokens):
+https://www.figma.com/design/5iFfLa378BPVxuXAaSQxAP
